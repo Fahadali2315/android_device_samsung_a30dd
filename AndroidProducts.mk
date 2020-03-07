@@ -14,5 +14,10 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_a40dd.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_samsung_a40.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_samsung_a40-user \
+    lineage_samsung_a40-userdebug \
+    lineage_samsung_a40-eng
 

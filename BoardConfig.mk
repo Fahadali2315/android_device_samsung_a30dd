@@ -25,11 +25,12 @@ TARGET_BOOTLOADER_BOARD_NAME := universal7885
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 TARGET_NO_RADIOIMAGE := true
+TARGET_SUPPORTS_64_BIT_APPS := false
 
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/a40dd/prebuilt/Image
+TARGET_PREBUILT_KERNEL := device/samsung/a40/prebuilt/boot.img-zImage
 
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSA16C001RU
 
@@ -78,5 +79,5 @@ TW_EXCLUDE_TWRPAPP := true
 TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/a40dd/prebuilt/recovery_dtbo
-PLATFORM_SECURITY_PATCH := 2099-12-31
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/a40/prebuilt/recovery_dtbo
+#PLATFORM_SECURITY_PATCH := 2099-12-31
